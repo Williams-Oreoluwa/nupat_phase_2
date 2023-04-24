@@ -9,8 +9,7 @@
 }
 body{
 
-    background: #FCFBFC;
-    ;
+    background:#FCFBFC;
     ;
 }
 
@@ -256,12 +255,18 @@ body{
     width: 70%;
     align-items: center;
     justify-content: center;
-    left: 20%;
+    left: 24%;
     top:16rem;
     padding: 1.2rem;
     font-family: regularFont;
     color: #858A93;
 
+
+}
+.text-stuff{
+    display: flex;
+    width: 100%;
+    gap: 7.4rem;
 
 }
 .text{
@@ -275,19 +280,22 @@ p{
 .task-wrapper{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+    gap: .2rem;
 }
 .task-box{
     width: 96%;
     display: flex;
     flex-direction: row;
-    gap: 7rem;
+    gap: 9rem;
     background: #F4F6F8;
     height: 60px;
     align-items: center;
     justify-content: center;
     padding-left: .6rem;
     border-radius: 8px;
+}
+.tasko{
+    gap: 12rem;
 }
 .number{
     display: flex;
@@ -330,33 +338,85 @@ p{
     gap:2rem
 }
 .pic2, .pic1, .normal-pic{
-    width: 12rem;
+    width: 100%;
 }
 
-@media screen and (min-width:1440px){
-    .task-wrapper{
-        gap: 3rem;
+.progress{
+    gap: 10rem;
+}
+.prog{
+    display: flex;
+    gap: 6rem;
+}
+@media screen and (min-width:1100px){
+    .task-box{
+        gap: 8rem;
     }
-    .pic2, .pic1,.normal-pic{
-        width: 16rem;
+    .tasko{
+        gap: 9rem;
     }
-    .task{
-        left: 21%;
-    }
+
 
     
 
 }
 
+@media screen and (min-width:1300px){
+
+    .text-stuff{
+    
+        gap: 8rem;
+    
+    }
+    .tasko{
+        gap: 12rem;
+    }
+
+
+    
+
+}
+
+
+@media screen and (min-width:1440px){
+    .task-wrapper{
+        gap: 1rem;
+    }
+
+    .task{
+        left: 20%;
+    }
+    .pic2, .pic1, .normal-pic{
+        width: 100%;
+    }
+    .text-stuff{
+    
+        gap: 9rem;
+    
+    }
+
+
+    
+
+}
+
+@media screen and (min-width:1545px) {
+    .task-wrapper{
+        gap: 5rem;
+    }
+    
+}
+
 @media screen and (min-width:1920px){
     .task-wrapper{
-        gap: 4rem;
+        gap: 7rem;
     }
-    .pic2, .pic1,.normal-pic{
-        width: 22rem;
-    }
+
     .task{
-        left: 22%;
+        left: 20%;
+    }
+    .pic2, .pic1, .normal-pic{
+        width: 100%;
     }
 
 }

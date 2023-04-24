@@ -17,7 +17,7 @@ const Task = () => {
       <div className="task">
         <div className="task-wrapper">
           <div className="items">
-            <div className="task-box" style={{ background: "" }}>
+            <div className="task-box tasko">
               <h3>To Do</h3>
               <div className="number">
                 <h3>3</h3>
@@ -44,7 +44,7 @@ const Task = () => {
               >
                 <div
                   className="text-stuff"
-                  style={{ display: "flex", gap: "6rem" }}
+               
                 >
                   <h2>Highfidelity Design</h2>
                   <img
@@ -70,15 +70,17 @@ const Task = () => {
                     justifyContent: "left",
                   }}
                 >
-                  <div
-                    className="progres-loader"
-                    style={{ display: "flex", gap: "1rem" }}
-                  >
-                    <img src="/images/today-3.png" alt="" />
-                    <h3>Progress</h3>
-                  </div>
-                  <div className="ratings">
-                    <h3>2/10</h3>
+                  <div className="prog">
+                    <div
+                      className="progres-loader"
+                      style={{ display: "flex", gap: "1rem" }}
+                    >
+                      <img src="/images/today-3.png" alt="" />
+                      <h3>Progress</h3>
+                    </div>
+                    <div className="ratings">
+                      <h3>2/10</h3>
+                    </div>
                   </div>
                 </div>
 
@@ -106,16 +108,17 @@ const Task = () => {
                   className="progress-again-stuff"
                   style={{ display: "flex", gap: "3rem", paddingTop: ".9rem" }}
                 >
-                  <div
-                    className="tuli"
-                    style={{ display: "flex", gap: ".8rem" }}
-                  >
-                    <img src="/images/today-3.png" alt="" />
-                    <h3>Progress</h3>
-                  </div>
-
-                  <div className="rato">
-                    <h3>2/10</h3>
+                  <div className="prog">
+                    <div
+                      className="progres-loader"
+                      style={{ display: "flex", gap: "1rem" }}
+                    >
+                      <img src="/images/today-3.png" alt="" />
+                      <h3>Progress</h3>
+                    </div>
+                    <div className="ratings">
+                      <h3>2/10</h3>
+                    </div>
                   </div>
                 </div>
                 {testData_1.map((item, index) => (
@@ -229,7 +232,7 @@ const Task = () => {
               >
                 <div
                   className="text-stuff"
-                  style={{ display: "flex", gap: "6rem" }}
+                 
                 >
                   <h2>Highfidelity Design</h2>
                   <img
@@ -257,15 +260,17 @@ const Task = () => {
                     justifyContent: "left",
                   }}
                 >
-                  <div
-                    className="progres-loader"
-                    style={{ display: "flex", gap: "1rem" }}
-                  >
-                    <img src="/images/today-3.png" alt="" />
-                    <h3>Progress</h3>
-                  </div>
-                  <div className="ratings">
-                    <h3>2/10</h3>
+                  <div className="prog">
+                    <div
+                      className="progres-loader"
+                      style={{ display: "flex", gap: "1rem" }}
+                    >
+                      <img src="/images/today-3.png" alt="" />
+                      <h3>Progress</h3>
+                    </div>
+                    <div className="ratings">
+                      <h3>2/10</h3>
+                    </div>
                   </div>
                 </div>
 
@@ -314,17 +319,19 @@ const Task = () => {
                   className="progress-again-stuff"
                   style={{ display: "flex", gap: "3rem", paddingTop: ".9rem" }}
                 >
-                  <div
-                    className="tuli"
-                    style={{ display: "flex", gap: ".8rem" }}
-                  >
-                    <img src="/images/today-3.png" alt="" />
-                    <h3>Progress</h3>
+                   <div className="prog">
+                    <div
+                      className="progres-loader"
+                      style={{ display: "flex", gap: "1rem" }}
+                    >
+                      <img src="/images/today-3.png" alt="" />
+                      <h3>Progress</h3>
+                    </div>
+                    <div className="ratings">
+                      <h3>10/10</h3>
+                    </div>
                   </div>
-
-                  <div className="rato">
-                    <h3>10/10</h3>
-                  </div>
+                
                 </div>
                 {testData_3.map((item, index) => (
                   <ProgressBar
@@ -418,7 +425,7 @@ const Task = () => {
                 >
                   <div
                     className="text-stuff"
-                    style={{ display: "flex", gap: "6rem" }}
+                   
                   >
                     <h2>Highfidelity Design</h2>
                     <img
@@ -444,6 +451,7 @@ const Task = () => {
                       justifyContent: "left",
                     }}
                   >
+                     <div className="prog">
                     <div
                       className="progres-loader"
                       style={{ display: "flex", gap: "1rem" }}
@@ -452,8 +460,10 @@ const Task = () => {
                       <h3>Progress</h3>
                     </div>
                     <div className="ratings">
-                      <h3>2/10</h3>
+                      <h3>10/10</h3>
                     </div>
+                  </div>
+                    
                   </div>
                   <div className="loader">
                     {testData_3.map((item, index) => (
