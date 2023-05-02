@@ -16,10 +16,14 @@ const TopNavBarHeader = () => {
           <div className="title">
             <h1>New Campaign Run </h1>
             <h4>
-              A new campaign launch work for brand new featur in May month
+              A new campaign launch work for brand new feature in May month.
             </h4>
           </div>
-          <button className="top-btn">ADD MEMBERS</button>
+          <div className="btn-container">
+              <button className="top-btn">ADD MEMBERS</button>
+
+          </div>
+        
         </div>
         <BelowNavBar />
       </div>
@@ -27,7 +31,7 @@ const TopNavBarHeader = () => {
   );
 };
 
-const BelowNavBar = () => {
+export const BelowNavBar = () => {
   return (
     <>
       <div className="below-header">
@@ -46,7 +50,17 @@ const BelowNavBar = () => {
               <h3>8 members</h3>
             </div>
           </div>
-          <div className="more-options">
+          <BelowNavList/>
+         
+        </div>
+      </div>
+    </>
+  );
+};
+
+export const BelowNavList = () =>{
+  return<>
+   <div className="more-options">
             <div className="more-options-wrapper">
               <ul>
                 <li className="options">
@@ -71,10 +85,7 @@ const BelowNavBar = () => {
               </ul>
             </div>
           </div>
-        </div>
-      </div>
-    </>
-  );
-};
+  </>
+}
 
 export default TopNavbar;

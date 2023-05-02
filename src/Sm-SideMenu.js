@@ -1,17 +1,28 @@
 import React from "react";
+import { GlobalHook } from "./Context";
 
+const SmSidemenu = () => {
+  const { isSideMenuOpen, closeSideMenu } = GlobalHook();
 
-const SideBar = () => {
   return (
     <>
-      <div className="sidebar-container">
-        <div className="sidebar-container-wrapper">
-          <SideBarTitle />
-          <SideBarContents />
-          <SideBarContentsContinued />
-          <NewProjectButton />
-        </div>
-      </div>
+  
+        <aside
+          className={`${
+            isSideMenuOpen ? "sm-sidebar-container show" : "sm-sidebar-container"
+          }`}
+        >
+          <div className="sm-sidebar-container-wrapper">
+            <button onClick={closeSideMenu} className="close-btn">
+              <i className="ri-close-line"></i>
+            </button>
+            <SideBarTitle />
+            <SideBarContents />
+            <SideBarContentsContinued />
+            <NewProjectButton />
+          </div>
+        </aside>
+      
     </>
   );
 };
@@ -32,13 +43,10 @@ const SideBarTitle = () => {
 const SideBarContents = () => {
   return (
     <>
- 
       <div className="contents">
         <div className="contents-wrapper">
           <ul>
-            <li>
-             
-            </li>
+            <li></li>
             <li className="list-contents">
               <img src="/images/1-sidebar.png" alt="" />
               <h2>Dashboard</h2>
@@ -106,4 +114,4 @@ const NewProjectButton = () => {
   );
 };
 
-export default SideBar;
+export default SmSidemenu;

@@ -17,7 +17,7 @@ const Task = () => {
       <div className="task">
         <div className="task-wrapper">
           <div className="items">
-            <div className="task-box tasko">
+            <div className="task-box">
               <h3>To Do</h3>
               <div className="number">
                 <h3>3</h3>
@@ -43,14 +43,16 @@ const Task = () => {
                 style={{ display: "grid", gap: ".6rem", paddingTop: ".6rem" }}
               >
                 <div
-                  className="text-stuff"
+                  className="text-stuffs"
+                 
                
                 >
                   <h2>Highfidelity Design</h2>
                   <img
                     src="/images/3-dots.png"
                     alt=""
-                    style={{ fontSize: ".5rem" }}
+                    style={{ fontSize: ".5rem", position:'relative', right:'1rem' }}
+
                   />
                 </div>
 
@@ -70,10 +72,10 @@ const Task = () => {
                     justifyContent: "left",
                   }}
                 >
-                  <div className="prog">
+                  <div className="proge">
                     <div
-                      className="progres-loader"
-                      style={{ display: "flex", gap: "1rem" }}
+                      className="progress-loader"
+                    
                     >
                       <img src="/images/today-3.png" alt="" />
                       <h3>Progress</h3>
@@ -108,10 +110,10 @@ const Task = () => {
                   className="progress-again-stuff"
                   style={{ display: "flex", gap: "3rem", paddingTop: ".9rem" }}
                 >
-                  <div className="prog">
+                  <div className="proge">
                     <div
-                      className="progres-loader"
-                      style={{ display: "flex", gap: "1rem" }}
+                      className="progress-loader"
+                     
                     >
                       <img src="/images/today-3.png" alt="" />
                       <h3>Progress</h3>
@@ -231,14 +233,14 @@ const Task = () => {
                 style={{ display: "grid", gap: ".6rem", paddingTop: ".6rem" }}
               >
                 <div
-                  className="text-stuff"
+                  className="text-stuffs"
                  
                 >
                   <h2>Highfidelity Design</h2>
                   <img
                     src="/images/3-dots.png"
                     alt=""
-                    style={{ fontSize: ".5rem" }}
+                   
                   />
                 </div>
 
@@ -260,7 +262,7 @@ const Task = () => {
                     justifyContent: "left",
                   }}
                 >
-                  <div className="prog">
+                  <div className="proge">
                     <div
                       className="progres-loader"
                       style={{ display: "flex", gap: "1rem" }}
@@ -319,7 +321,7 @@ const Task = () => {
                   className="progress-again-stuff"
                   style={{ display: "flex", gap: "3rem", paddingTop: ".9rem" }}
                 >
-                   <div className="prog">
+                   <div className="proge">
                     <div
                       className="progres-loader"
                       style={{ display: "flex", gap: "1rem" }}
@@ -424,14 +426,15 @@ const Task = () => {
                   style={{ display: "grid", gap: ".6rem", paddingTop: ".6rem" }}
                 >
                   <div
-                    className="text-stuff"
+                    className="text-stuffs"
                    
                   >
+                    
                     <h2>Highfidelity Design</h2>
                     <img
                       src="/images/3-dots.png"
                       alt=""
-                      style={{ fontSize: ".5rem" }}
+                   
                     />
                   </div>
 
@@ -451,7 +454,7 @@ const Task = () => {
                       justifyContent: "left",
                     }}
                   >
-                     <div className="prog">
+                     <div className="proge">
                     <div
                       className="progres-loader"
                       style={{ display: "flex", gap: "1rem" }}
